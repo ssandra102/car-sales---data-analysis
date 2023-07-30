@@ -7,9 +7,7 @@ Car details
 import datetime
 import calendar
 import random
-import numpy
 import pandas as pd
-import uuid
 import os
 import csv
 

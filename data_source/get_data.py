@@ -5,9 +5,7 @@ Car details
 
 
 import datetime
-import calendar
 import random
-import pandas as pd
 import os
 import csv
 

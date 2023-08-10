@@ -25,7 +25,9 @@ jobs:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
-        run: python data_source/get_data.py
+        run: |
+          python data_source/get_data.py
+          python datasetGenerator/get_data.py
           
       - name: commit files
         run: |
